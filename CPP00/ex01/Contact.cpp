@@ -8,10 +8,6 @@ std::string format(const std::string& str)
         return str;
 }
 
-Contact::Contact() {}
-
-Contact::~Contact() {}
-
 void Contact::setFirstName(const std::string& name) {
     firstName = name;
 }

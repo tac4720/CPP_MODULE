@@ -11,7 +11,7 @@ class Phonebook{
 		int		oldest_index;
 	public:
 		Phonebook();
-		void 	add();
+		bool 	add();
 		void	search();
 		void	display();
 		void	display_content(int index);
