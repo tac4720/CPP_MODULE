@@ -7,7 +7,7 @@
 class Fixed{
 	private:
 		int rawBits;
-		const static int bit_num = 8;
+		const static int bit_num;
 	public:
 		Fixed();
 		Fixed(const Fixed& other);

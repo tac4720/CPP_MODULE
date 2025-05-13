@@ -1,5 +1,7 @@
 #include "Fixed.hpp"
 
+const int Fixed::bit_num = 8;
+
 Fixed::Fixed()
 	: rawBits(0){
 	std::cout << "Default constructor called" << std::endl;
@@ -41,9 +43,14 @@ void Fixed::setRawBits(int const raw){
 }
 
 float Fixed::toFloat(void) const{
-
+	return (float)this->rawBits / (float)(1 << this->bit_num);
 }
 
-int Fixed::to_int(void) const{
+int Fixed::toInt(void) const{
+	return (int)(this->rawBits >> this->bit_num);
+}
 
+std::ostream& operator<<(std::ostream& out, const Fixed& value) {
+    out << value.toFloat();
+    return out;
 }
