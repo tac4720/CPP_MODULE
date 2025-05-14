@@ -32,6 +32,7 @@ bool Sed::process(void){
 	std::string line;
     while(std::getline(infile, line)){
 		line = Sed::replace(line);
+		if ()
 		outfile << line << std::endl;
 	}
 
