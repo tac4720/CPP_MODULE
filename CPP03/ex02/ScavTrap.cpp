@@ -44,5 +44,5 @@ void ScavTrap::guardGate(){
 		std::cout << "ScavTrap "<< _name << " has no points" << std::endl;
 		return;
 	}
-    std::cout << "ScavTrap " << _name << " is now Gate keeper mode!\n";
+    std::cout << "ScavTrap " << _name << " is now Gate keeper mode!" << std::endl;
 }
