@@ -30,4 +30,6 @@ Animal& Animal::operator=(const Animal& other){
 void Animal::makeSound() const{
 	std::cout << "Animal make sound" << std::endl;
 }
-
+std::string Animal::getType() const{
+	return type;
+}
