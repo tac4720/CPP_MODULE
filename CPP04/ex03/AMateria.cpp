@@ -7,7 +7,8 @@ AMateria::AMateria(AMateria const & src) : type(src.type) {}
 AMateria::~AMateria() {}
 
 AMateria& AMateria::operator=(AMateria const & src) {
-	(void)src;
+	if (this != &src) {
+	}
 	return *this;
 }
 
